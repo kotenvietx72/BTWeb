@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>QLSV</servlet-name>
+        <servlet-class>Controller.QLSV</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SuaSV</servlet-name>
+        <servlet-class>Controller.SuaSV</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>xoaSV</servlet-name>
+        <servlet-class>Controller.xoaSV</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TimSV</servlet-name>
+        <servlet-class>Controller.TimSV</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>QLSV</servlet-name>
+        <url-pattern>/QLSV</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SuaSV</servlet-name>
+        <url-pattern>/SuaSV</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>xoaSV</servlet-name>
+        <url-pattern>/xoaSV</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TimSV</servlet-name>
+        <url-pattern>/TimSV</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
