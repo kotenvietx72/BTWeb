@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class KN {
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://localhost:3333/qlsv", "root", "");
+        return DriverManager.getConnection("mysql://root:eUTJpNDWRmdIVtTbLIKLBPvLgrbhLFYz@mysql.railway.internal:3306/railway", "root", "eUTJpNDWRmdIVtTbLIKLBPvLgrbhLFYz");
     }
 
     public ArrayList<SinhVien> DocDuLieu() throws ClassNotFoundException {
